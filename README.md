@@ -29,10 +29,10 @@ App
         
 ```
 
-This React application is composed with the following React componants:
-* [`Book`](src/componants/Book.js) : Represents a book.
-* [`BookSearchBar`](src/componants/BookSearchBar.js): The main component of the search view. Needs the [`Book`](src/componants/Book.js) component to display the books resulted from the search query.
-* [`BooksShelf`](src/componants/BooksShelf.js) : The main component of the main page. Needs the [`Book`](src/componants/Book.js) component to display the list of books present inside the shelf.
+This React application is composed with the following React components:
+* [`Book`](src/components/Book.js) : Represents a book.
+* [`BookSearchBar`](src/components/BookSearchBar.js): The main component of the search view. Needs the [`Book`](src/components/Book.js) component to display the books resulted from the search query.
+* [`BooksShelf`](src/components/BooksShelf.js) : The main component of the main page. Needs the [`Book`](src/components/Book.js) component to display the list of books present inside the shelf.
 
 ## How To Start
 1. Clone this repository
