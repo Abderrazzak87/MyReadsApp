@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
-
 class Book extends Component {
 
     /* Book required props */
@@ -18,7 +17,6 @@ class Book extends Component {
         const backgroundImage = (book.imageLinks && book.imageLinks.smallThumbnail) ? 
                                 book.imageLinks.smallThumbnail : "none"
 
-
         return (
             <div className="book">
                 <div className="book-top">
@@ -32,9 +30,8 @@ class Book extends Component {
                     </div>
                     <div className="book-shelf-changer">
                         <select
-                        value={book.shelf}
-                        onChange={event => updateShelf(book, event.target.value)}
-                        >
+                        value={book.shelf ? book.shelf : 'none'}
+                        onChange={event => updateShelf(book, event.target.value)}>
                             <option value="move" disabled>Move to...</option>
                             <option value="currentlyReading">Currently Reading</option>
                             <option value="wantToRead">Want to Read</option>

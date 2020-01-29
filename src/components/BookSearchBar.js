@@ -21,7 +21,7 @@ class BookSearchBar extends Component {
     updateQuery = (query) => {
 
         // Update the variable state query
-        this.setState({ query: query.trim()})
+        this.setState({ query: query})
         this.searchBooks(query)
 
     }
